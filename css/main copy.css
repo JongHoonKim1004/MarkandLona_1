@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* announcement */
+#announcement {width:100%; height:30px; background-color: black; margin:0 auto;}
+#announcement-text {color:white; font-size: 13px; font-weight: 300; padding:5px; text-align: center;}
+
+/* header-slider-div */
+#header-slider-div {width:100%; position: relative;}
+
+/* slider */
+#slider {width:100%; margin:0 auto;}
+.slider-main-box {width:1450px; height:600px; margin:0 auto; overflow:hidden;}
+.slider-box {width:4350px; height:600px; float:left; position:relative;}
+.slider-box > li {width:1450px; height:600px; float:left; }
+.slider-box > li img {width:100%; height:100%;}
+
+/* main */
+#general {width:1450px; height:1600px; margin:0 auto;}
+#general > h1 {width:1450px; height:200px; text-align: center; padding-top: 80px; font-size: 40px; font-weight: 400;}
+#genPro {width:1450px; height:1200px; margin:0 auto;}
+.product {width:300px; height:400px; float:left; margin:40px 0 0 50px;}
+.image-div {width:300px; height:300px;}
+.image-div img {width:100%; height:100%;}
+.text-div {width:300px; height:100px; text-align: center; color:#757373; font-size: 15px;}
+.product-title-div {width:100%; height:60px; margin-bottom: 5px; padding: 5px 0;}
+.product-title-div p {width:100%;}
+.product-price-div {width:100%; height:30px; margin-top: 5px;}
+.product-price-div p {width:100%;}
+#btnDiv {width:1450px; height:100px; margin:100px auto; float:left; display: flex;}
+#btnDiv a {width:110px; height:40px; margin:0 auto; padding:8px 10px; text-align: center; background-color: black; color:white;}
+#midSlider {width:100%; height:500px; margin:0 auto; text-align: center;}
+
+#midSlider-video {width:1200px; height:90%; margin:0 auto;}
+#collection {width:1450px; height:1300px; margin:0 auto;}
+#collection > h1 {width:1450px; height:100px; text-align: center; padding: 80px; font-size: 40px; font-weight: 400;}
+.collection-image-div {width:400px; height:400px; float:left; margin:50px 0 0 62px; position: relative;}
+.collection-image-div img {width:100%; height:100%; z-index: auto; position: absolute;}
+.collection-image-div span {color:white; position: absolute; float:left; text-align: center; width:100%; height:40px; font-size: 30px; margin-top:180px; text-shadow: 3px 3px 3px #eee;}
+#collection a:hover{opacity: 0.3;}
+#instagram {width:1450px; height:350px; margin:0 auto; padding:0px ;}
+#instagram > h1 {width:1450px; height:40px; text-align: center; padding: 0px; font-size: 40px; font-weight: 400;}
+#instaBox {width:1200px; height:250px; margin:10px auto;}
+.instagram-image {width:16%; height:200px; float:left; margin:30px 0 0 0px;}
+.instagram-image img {width:100%; height:100%;}

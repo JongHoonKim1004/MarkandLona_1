@@ -1,0 +1,79 @@
+@charset "utf-8";
+table,tr,td,th {border:1px solid black;}
+td,th {padding:20px 10px;}
+
+/* announcement */
+#announcement {width:100%; height:30px; background-color: black; margin:0 auto;}
+#announcement-text {color:white; font-size: 13px; font-weight: 300; padding:5px; text-align: center;}
+
+/* header-sub-div */
+#header-sub-div {width:100%; position:relative;}
+
+/* sub */
+#sub {width:1450px; height:3500px; margin:0 auto;}
+#sub-head-hidden {width:1450px; height:80px; margin:0 auto;}
+
+aside {width:700px; height:600px; float:left; border:1px solid black; position:sticky; top: 160px;}
+#thumbnail-navigation {float:left; width:100px; height:400px; margin:20px 0 0 20px; overflow: scroll; border:1px solid aqua;}
+#thumbnail-navigation::-webkit-scrollbar {display: none;}
+.thumbnail-navigation-img-div {width:80px; height:80px; margin: 5px 0 5px 10px;}
+.thumbnail-navigation-img-div > img {width:100%; height:100%;}
+
+#thumbnail-main-image {width:500px; height:500px; float:right; margin:20px 20px 0 0; border:1px solid aqua;}
+#thumbnail-main-image > img {width:100%; height:100%;}
+
+#content {width:700px; height:auto; float:right; padding-left:30px; border:1px solid white;}
+
+#product-main-div {width:100%; height:150px; line-height: 150%; padding-top: 20px;}
+#product-main-div > h1 {font-size: 28px; margin-top: 10px;}
+#product-main-div > p {margin:10px 0;}
+
+#content > hr {width:80%;}
+.product-secondary-div {width:100%; height:100px; margin-bottom:10px;}
+.product-secondary-name-div {width:100%; height:50px; padding:15px 0 10px 5px; text-align: left; letter-spacing: 2px;}
+.product-secondary-radio-div {width:100%; height:50px; float: left; padding-top: 10px;}
+.color-radio {display: none;}
+.color-radio+label {display:inline-block; width:100px; height:35px; border:2px solid black; border-radius: 3px; line-height: 20px; text-align: center; padding-top:5px}
+.color-radio+label {background-color: white; color:#757373;}
+.color-radio:checked+label {background-color: #757373; color:white;}
+
+.size-radio {display: none;}
+.size-radio+label {display:inline-block; width:50px; height:35px; border:2px solid black; border-radius: 3px; line-height: 20px; text-align: center; padding-top: 5px;}
+.size-radio+label {background-color: white; color:#757373;}
+.size-radio:checked+label {background-color: #757373; color:white;}
+
+.product-secondary-amount-div {width:100%; height:50px; float: left;}
+#product-secondary-amount-input-div {width:120px; height:40px;}
+#amount-input {width:30%; height:33px; font-size:25px; text-align: center; padding:0; border:0; margin-top:2px}
+#amount-button-minus {width:33%; height:40px; float:left; font-size: 30px;}
+#amount-button-plus {width:33%; height:40px; float:right; font-size: 30px;}
+
+#product-cart-purchase-div {width: 100%; height: 150px; margin-bottom: 10px;}
+#product-cart-div {width:100%; height:70px; margin-bottom:5px;}
+#product-purchase-div {width:100%; height:70px; margin-top:5px;}
+.cart-purchase-button {width:100%; height:100%; border:1px solid black; cursor: pointer; border-radius: 3px; font-size: 20px; font-weight: 600;}
+#add-cart {background-color: white; color:black;}
+#purchase {background-color: black; color: white;}
+#purchase:hover {opacity: 0.8;}
+
+#product-block {width:100%; height:2000px; padding-right: 10px;}
+#product-block > p {line-height: 130%;}
+
+#product-block-hidden-div {width:100%; height:50px;}
+
+#product-block-size-table-div {width:100%; height:500px;}
+.product-block-size-table {width:100%; height:450px; text-align: center; border-spacing: 1px; position:relative; border:1px solid #757373; table-layout: fixed; margin-top: 10px;}
+.product-block-size-table > tr > td {padding:10px}
+
+#product-block-additional-information-div {width:100%; height:300px;}
+.product-black-additional-information-table {width:100%; height:250px; text-align: center; border-spacing: 1px; position:relative; border:1px solid #757373; table-layout: fixed; margin-top: 10px;}
+
+#product-block-information-div {width:100%; height:500px; margin-top: 30px;}
+.product-block-information-table {width:100%; height:450px; text-align: center; border-spacing: 1px; position:relative; border:1px solid #757373; table-layout: fixed; margin-top: 10px;}
+
+
+
+#suggest-item {width:100%; height:400px; float:right; margin-top:20px; border:1px solid black;}
+#suggest-item-text-div {width:100%; height:100px; text-align: center; padding-top:30px; border:1px solid aqua;}
+#suggest-item-image-div {width:100%; height:300px; padding:20px;}
+

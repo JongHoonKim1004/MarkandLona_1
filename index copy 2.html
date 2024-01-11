@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARK & LONA</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+</head>
+<body>
+    <div id="announcement">
+        <a href="#"><p id="announcement-text">[EVENT] 1월 기프트 안내</p></a>
+    </div>
+    <div id="header-slider-div">
+    <header>
+        <div id="logo"><a href="#"><img alt="logo" src="img/logo.png"></a></div>
+        <div id="login">
+            <a href="#"><img src="img/login_icon_1.png" alt="login_icon_1"></a>
+            <p>  </p>
+            <a href="#"><img src="img/login_icon_2.png" alt="login_icon_2"></a>
+            <a href="#"><img src="img/login_icon_3.png" alt="login_icon_3"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">NEW</a></li>
+                <li class="big-sub-menu"><a href="#">MAN</a>
+                    <ul class="big-sub-name-ul">
+                        <li><a href="#">OUTER</a>
+                            <ul class="clothes-sub-name">
+                                <li><a href="#">DOWN</a></li>
+                                <li><a href="#">JACKET</a></li>
+                                <li><a href="#">VEST</a></li>
+                                <li><a href="#">RAIN WEAR</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">TOP</a>
+                            <ul class="clothes-sub-name">
+                                <li><a href="#">SHORT SLEEVE</a></li>
+                                <li><a href="#">LONG SLEEVE</a></li>
+                                <li><a href="#">SLEEVELESS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">KNIT WEAR</a>
+                            <ul class="clothes-sub-name">
+                                <li><a href="#">KNIT VEST</a></li>
+                                <li><a href="#">KNIT WEAR</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">BOTTOM</a>
+                            <ul class="clothes-sub-name">
+                                <li><a href="#">LONG PANTS</a></li>
+                                <li><a href="#">SHORT PANTS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="big-sub-menu"><a href="#">WOMAN</a>
+                    <ul class="big-sub-name-ul">
+                        <li><a href="#">OUTER</a>
+                            <ul class="clothes-sub-name">
+                                <li><a href="#">DOWN</a></li>
+                                <li><a href="#">JACKET</a></li>
+                                <li><a href="#">VEST</a></li>
+                                <li><a href="#">RAIN WEAR</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">TOP</a>
+                            <ul class="clothes-sub-name">
+                                <li><a href="#">SHORT SLEEVE</a></li>
+                                <li><a href="#">LONG SLEEVE</a></li>
+                                <li><a href="#">SLEEVELESS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">KNIT WEAR</a>
+                            <ul class="clothes-sub-name">
+                                <li><a href="#">KNIT VEST</a></li>
+                                <li><a href="#">KNIT WEAR</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">BOTTOM</a>
+                            <ul class="clothes-sub-name">
+                                <li><a href="#">LONG PANTS</a></li>
+                                <li><a href="#">SHORT PANTS</a></li>
+                                <li><a href="#">SKIRT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">DRESS</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ONLINE ECXLUSIVE</a></li>
+                <li class="small-sub-menu"><a href="#">ACC</a>
+                    <ul class="ul-sub-menu">
+                        <li><a href="#">HAT</a></li>
+                        <li><a href="#">GOLF BALL</a></li>
+                        <li><a href="#">POUCH</a></li>
+                        <li><a href="#">CADDIE BAG</a></li>
+                        <li><a href="#">BOSTON BAG</a></li>
+                        <li><a href="#">SHOES</a></li>
+                        <li><a href="#">SOCKS</a></li>
+                        <li><a href="#">GLOVES</a></li>
+                        <li><a href="#">BELT</a></li>
+                        <li><a href="#">ETC</a></li>
+                        <li><a href="#">HEAD COVER</a></li>
+                    </ul>
+                </li>
+                <li class="small-sub-menu"><a href="#">COLECTION</a>
+                    <ul class="ul-sub-menu">
+                        <li><a href="#">GENERAL</a></li>
+                        <li><a href="#">TOURNAMENT</a></li>
+                        <li><a href="#">CODE</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">STYLE</a></li>
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#">SHOP LIST</a></li>
+                <li class="small-sub-menu"><a href="#">SNS</a>
+                    <ul class="ul-sub-menu">
+                        <li><a href="#">INSTAGRAM</a></li>
+                        <li><a href="#">YOUTUBE</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div id="slider">
+        <div class="slider-main-box">
+            <ul class ="slider-box">
+                <li><img src="img/slider_1.png"></li>
+                <li><img src="img/slider_2.png"></li>
+                <li><img src="img/slider_3.png"></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    
+
+    <script>
+        
+        /* nav */
+        $(function(){
+            $("nav > ul > li").mouseover(function(){
+                $(this).children(".ul-sub-menu").stop().slideDown()
+            }).mouseout(function(){
+                $(".ul-sub-menu").stop().slideUp()
+            });
+            $(".big-sub-menu").mouseover(function(){
+                $(this).children(".big-sub-name-ul").stop().slideDown()
+            }).mouseout(function(){
+                $(".big-sub-name-ul").stop().slideUp()
+            });
+        });
+
+
+
+        /* slider */
+        setInterval(slide,4000);
+        function slide(){
+            $(".slider-box").stop().animate({marginLeft:-1450},500,function(){
+                $(".slider-box li:first").appendTo(".slider-box");
+                $(".slider-box").css({marginLeft:0});
+            });
+        }
+
+    
+
+    </script>
+</body>
+</html>

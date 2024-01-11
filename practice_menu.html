@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0;}
+        ul,li,ol {list-style: none; margin: 0; padding: 0;}
+        #wrap {width:1000px; height:1000px; border:3px solid #000; position:relative;}
+        a {text-decoration: none; color:#333;}
+
+
+        /*menu*/
+        .menu { margin:10px 0 0 0px; float: left; width: 700px; }
+        .menu > li {float:left; width:33.3333%;  text-align: center; transition:all 0.5s ease; line-height: 40px; background: #000; }
+        .menu > li > a {color:#fff;}
+        .menu > li:hover > a {color:#000;}
+        .menu > li:hover {background-color: #fff;}
+
+        .sub {background-color:#ccc; display: none;  z-index:3; position:relative; }
+        .sub > li {transition: all 0.5s ease; }
+        .sub > li > a:hover {background-color: gold; display: block; }
+
+
+        /*slider*/
+        #slidewrap {width: 1000px; height: 350px; margin:50px 0 0 0; position: relative; }
+        .slide {width: 100%;  }
+        .slide > li {width: 100%; height: 350px; position: absolute; left: 0; top:0;}
+        .slide > li > img {width: 100%; height: 100%;}
+        .slide li:not(:first-child) {display: none;}
+
+        p {position: absolute; top:50%; left: 50%; text-align: center; background-color:#fff; transform: translate(-50%, -50%); width: 350px; border-radius: 10px; height: 60px; line-height: 60px; opacity: 0.8;}
+    </style>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+
+        <!--menu-->
+        <nav>
+            <ul class="menu">
+            <li><a href="#">Menu1</a></li>
+            <li><a href="#">Menu2</a>
+                <ul class="sub">
+                    <li><a href="#">sub menu1</a></li>
+                    <li><a href="#">sub menu2</a></li>
+                    <li><a href="#">sub menu3</a></li>
+                    <li><a href="#">sub menu4</a></li>
+                </ul>     
+            </li>
+                <li><a href="#">Menu3</a>
+                    <ul class="sub">
+                        <li><a href="#">sub menu1</a></li>
+                        <li><a href="#">sub menu2</a></li>
+                        <li><a href="#">sub menu3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!--slider-->
+        <div id="slidewrap">
+            <ul class="slide">
+                <li><img src="https://images.unsplash.com/photo-1575721697801-937774cc44ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="slide image"></li>
+                <li><img src="https://images.unsplash.com/photo-1503197979108-c824168d51a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMjU4fQ&auto=format&fit=crop&w=1491&q=80" alt="slide image"></li>
+                <li><img src="https://images.unsplash.com/photo-1507496380922-d75b080daf03?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"  alt="slide image"></li>
+            </ul>
+            <p>Slide Image Text!</p>
+        </div>
+    </div>
+    <script>
+        $(".menu > li").mouseover(function(){
+            $(this).children(".sub").stop().slideDown();
+        }).mouseout(function(){
+            $(".sub").stop().slideUp();
+        });
+    </script>
+</body>
+</html>
